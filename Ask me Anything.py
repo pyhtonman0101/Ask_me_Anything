@@ -6,7 +6,7 @@ def wolf_search(query):
     try:
         global my_query
         my_query=query.lower()
-        app_id = 'VLKT3H-GWWK8HYR69'           #get it from wolframeAlpha site
+        app_id = 'Your Wolframe Alpha App Id'           #get it from wolframeAlpha site
         cleint = wolframalpha.Client(app_id)
         answer = cleint.query(my_query)
         res = next(answer.results).text
